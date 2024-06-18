@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Exo 2", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    background-color: #efefef;
+}
+
+
+
+.card {
+    position: relative;
+    margin-top: 2rem;
+    max-width: 100%; /* Ajusta el ancho máximo del contenedor de la tarjeta */
+    max-height: 676px; /* Ajusta esta altura según lo necesites */
+    overflow: hidden; /* Asegúrate de que cualquier contenido desbordante se oculte */
+}
+
+.card .gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.9),
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0)
+    );
+    z-index: 1;
+}
+
+.card-img {
+    position: relative;
+    z-index: 0;
+    width: 100%; /* Asegúrate de que la imagen ocupe el ancho completo del contenedor */
+    height: 100%; /* Ocupa toda la altura del contenedor */
+    object-fit: cover;
+}
+
+.card-img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    padding: 40px;
+    width: 50%; /* Ajusta este valor según tus necesidades */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white; /* Asegúrate de que el texto sea visible sobre el fondo oscuro */
+    margin: 30px;
+}
+
+.card-img-overlay .btn {
+    background-color: #ffffff; /* Color de fondo del botón */
+    color: #000000;
+    border: none; /* Quita el borde del botón */
+    padding: 10px 20px; /* Ajusta el padding del botón */
+    text-decoration: none; /* Quita la subrayado del enlace */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave */
+    border-radius: 8px; /* Borde redondeado */
+    text-align: center;
+    width: 300px; /* Ancho del botón */
+    margin-top: 10px; /* Reduzco el margen superior */
+    margin-bottom: 5px; /* Reduzco el margen inferior */
+    font-family: "Exo 2", sans-serif;
+    font-weight: 700;
+}
+
+.card-img-overlay .btn:hover {
+    background-color: #43baff; /* Cambio de color de fondo al pasar el mouse */
+    color: #000000; /* Cambio de color del texto al pasar el mouse */
+}
+
+.card-img-overlay .card-link {
+    color: #ffffff; /* Color del enlace */
+    text-decoration: none; /* Quita el subrayado del enlace */
+    font-size: 22px; /* Tamaño de fuente del enlace */
+    transition: color 0.3s; /* Transición suave */
+    text-align: left;
+    margin-top: 10px; /* Reduzco el margen superior */
+    margin-bottom: 5px; /* Reduzco el margen inferior */
+}
+
+.card-img-overlay .card-link:hover {
+    color: #43baff; /* Cambio de color del enlace al pasar el mouse */
+}
+
+.card-title {
+    font-size: 75px;
+    text-align: left;
+    margin-top: 5px; /* Reduzco el margen superior */
+    margin-bottom: 30px; /* Reduzco el margen inferior */
+}
+
+.card-text {
+    font-size: 25px;
+    text-align: left;
+    margin-bottom: 30px; /* Reduzco el margen inferior */
+}
+
+.btn i {
+    margin-right: 8px; /* Espacio entre el icono y el texto */
+}
+
+.btn-custom {
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px solid #000000; /* Bordes para diferenciar de btn-outline-success */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.btn-custom:hover {
+    background-color: #43baff; /* Azul de Bootstrap */
+    color: #ffffff;
+    border-color: #43baff;
+}

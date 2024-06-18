@@ -1,0 +1,13 @@
+/* assets/css/styles.css */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    max-height: 50px;
+    padding-right: 10px; /* Espacio opcional a la derecha */
+    margin-right: auto; /* Alineación a la izquierda */
+
+}
+
